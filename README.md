@@ -20,29 +20,29 @@ The main.py script orchestrates the execution of the video processing and Telegr
 - Sends a Telegram message ("Hydrate nucleation occurred") and moves videos to 'Processing/saved' when three or more videos are detected.
 - Subprocess Management: Launches bot.py and CV_webcam.py as separate subprocesses using Python's subprocess module.
 ## Dependencies
-certifi==2023.11.17
-charset-normalizer==3.3.2
-Cython==3.0.7
-h5py==3.10.0
-idna==3.6
-keras==2.13.1
-libclang==16.0.6
-numpy==1.24.3
-opencv-python==4.5.5.62
-packaging==23.2
-pyTelegramBotAPI==4.14.1
-requests==2.31.0
-tensorboard==2.13.0
-tensorboard-data-server==0.7.2
-tensorflow==2.13.1
-tensorflow-estimator==2.13.0
-tensorflow-io-gcs-filesystem==0.34.0
-urllib3==2.1.0
-wheel==0.42.0
+- certifi==2023.11.17
+- charset-normalizer==3.3.2
+- Cython==3.0.7
+- h5py==3.10.0
+- idna==3.6
+- keras==2.13.1
+- libclang==16.0.6
+- numpy==1.24.3
+- opencv-python==4.5.5.62
+- packaging==23.2
+- pyTelegramBotAPI==4.14.1
+- requests==2.31.0
+- tensorboard==2.13.0
+- tensorboard-data-server==0.7.2
+- tensorflow==2.13.1
+- tensorflow-estimator==2.13.0
+- tensorflow-io-gcs-filesystem==0.34.0
+- urllib3==2.1.0
+- wheel==0.42.0
 ## Usage
 1. Ensure all dependencies are installed (pip install tensorflow opencv-python numpy).
 2. Place the pre-trained model file (hydrate_model.h5) in the same directory as this script.
-3. Run the script.
+3. Run the main script.
 ## File Structure
 - CV_webcam.py: Real-time video processing script for hydration prediction.
 - bot.py: Telegram bot script for notification and directory management.
